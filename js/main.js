@@ -20,17 +20,17 @@ for (var i = 0; i < getImages.length; i++) {
   (function(x) {  
     getImages[x].addEventListener('click', function() {
 
-      var modal = document.getElementById('popup');
+      var popup = document.getElementById('popup');
       var newImage = (this.getAttribute('src'));
     
-      var modalImg = document.getElementById('newimg');
+      var popImg = document.getElementById('newimg');
       
-          modal.style.display = "block";
-          modalImg.src = newImage;
+          popup.style.display = "block";
+          popImg.src = newImage;
 
      var span = document.getElementsByClassName("close")[0];
      span.onclick = function() { 
-    modal.style.display = "none";
+    popup.style.display = "none";
 }
 })
   }
